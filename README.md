@@ -1,6 +1,6 @@
 # circleci-diag
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-diag.svg?style=shield)](https://circleci.com/gh/circleci/circleci-diag)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-diag.svg?style=shield&circle-token=95ea032aa1784dce6e43162fe42f2d4340acae2f)](https://circleci.com/gh/circleci/circleci-diag)
 
 Bash script to run diag commands in a build
 
