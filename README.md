@@ -1,4 +1,7 @@
 # circleci-diag
+
+[![CircleCI](https://circleci.com/gh/circleci/circleci-diag.svg?style=shield)](https://circleci.com/gh/circleci/circleci-diag)
+
 Bash script to run diag commands in a build
 
 ## Supported OS
