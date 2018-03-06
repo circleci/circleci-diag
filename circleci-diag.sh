@@ -17,5 +17,7 @@ do
   ./$f
 
   # Add some linebreaks between modules
-  echo "\n\n\n"
+  echo ""
+  echo ""
+  echo ""
 done
