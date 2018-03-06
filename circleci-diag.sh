@@ -12,4 +12,7 @@ echo "I have found the following modules:"
 for f in $BASE.*.sh
 do
 	echo "Located module $f"
+
+  # Can we just run the modules?
+  $f
 done
