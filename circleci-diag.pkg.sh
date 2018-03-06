@@ -22,10 +22,10 @@ then
   echo "The OS is $CIRCLECI_DIAG_OS"
   if [ $CIRCLECI_DIAG_OS == "Linux" ]
   then
-    pkg_linux()
+    pkg_linux
   elif [ $CIRCLECI_DIAG_OS == "Darwin" ]
   then
-    pkg_darwin()
+    pkg_darwin
   fi
 else
   echo -e "Someone forgot to set the OS env\n"
