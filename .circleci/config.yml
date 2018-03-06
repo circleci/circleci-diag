@@ -5,18 +5,18 @@ jobs:
       - image: ruby:2.5
     steps:
       - checkout
-      - run: uname
+      - run: ./circleci-diag.sh
   machine:
     machine: true
     steps:
       - checkout
-      - run: uname
+      - run: ./circleci-diag.sh
   macos:
     macos:
       xcode: "9.0"
     steps:
       - checkout
-      - run: uname
+      - run: ./circleci-diag.sh
 workflows:
   version: 2
   build_and_test:
