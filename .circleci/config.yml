@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  docker:
+    docker:
+      - image: ruby:2.5
+    steps:
+      - checkout
+      - run: uname
+  machine:
+    machine: true
+    steps:
+      - checkout
+      - run:uname
+  macos:
+    macos:
+      xcode: "9.0"
+    steps:
+      - checkout
+      - run: uname
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - docker
+      - machine
+      - macos
