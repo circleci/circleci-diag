@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-uname
+# Get OS
+uname -o
