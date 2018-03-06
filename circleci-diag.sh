@@ -15,4 +15,7 @@ do
 
   # Can we just run the modules?
   ./$f
+
+  # Add some linebreaks between modules
+  echo "\n\n\n"
 done
