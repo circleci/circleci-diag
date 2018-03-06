@@ -14,5 +14,5 @@ do
 	echo "Located module $f"
 
   # Can we just run the modules?
-  $f
+  ./$f
 done
