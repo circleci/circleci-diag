@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash
 
 # Get OS
 export CIRCLECI_DIAG_OS="$(uname -s)"
