@@ -21,3 +21,4 @@ Uses `uname -s` to fetch OS
 
 * Runs `dpkg -l` on Linux
 * Runs `brew list --versions` on Darwin
+
