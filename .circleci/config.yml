@@ -10,7 +10,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run:uname
+      - run: uname
   macos:
     macos:
       xcode: "9.0"
