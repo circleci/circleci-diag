@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ls -la
+
 # Get OS
 export CIRCLECI_DIAG_OS=$(uname -s)
 echo "The OS is $CIRCLECI_DIAG_OS"
