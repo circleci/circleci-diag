@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo "checking permissions"
 ls -la
 
 # Get OS
