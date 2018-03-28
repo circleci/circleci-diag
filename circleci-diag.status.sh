@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # URL_GOOGLE="https://status.cloud.google.com/incidents.json" - Hard to extract
 # URL_AWS="https://status.aws.amazon.com/data.json" -> Hard to extract
 # URL_DOCKER="https://status.docker.com/pages/533c6539221ae15e3f000031/rss" -> Hard to extract
