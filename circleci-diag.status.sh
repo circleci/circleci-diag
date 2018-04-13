@@ -6,11 +6,9 @@
 # URL_GH="https://status.github.com/api/status.json"
 # URL_BB="https://bqlf8qjztdtr.statuspage.io/api/v2/status.json"
 
-echo "Aquiring JSON.sh"
-curl https://raw.githubusercontent.com/dominictarr/JSON.sh/master/JSON.sh -s >> ./JSON.sh
-echo "JSON.sh has been downloaded."
 echo "Create status log directory"
-mkdir -p status_logs
+
+mkdir status_logs
 
 function pkg_statusAWS() {
   echo "Fetching Amazon status"
