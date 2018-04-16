@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/usr/bin/env bash
 throw() {
   echo "$*" >&2
   exit 1

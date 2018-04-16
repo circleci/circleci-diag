@@ -8,9 +8,32 @@
 
 echo "Create status log directory"
 
-mkdir status_logs
+mkdir -p status_logs
 
-function pkg_statusAWS() {
+# function status_AWS() {
+#   echo "Fetching Amazon status"
+#   curl -s https://status.aws.amazon.com/data.json | ./JSON.sh > ./status_logs/aws.json
+#   echo "Amazon status saved"
+#   grep "\[\"current\"\]" ./status_logs/aws.json
+# }
+
+function status_AWS() {
   echo "Fetching Amazon status"
-  curl https://status.aws.amazon.com/data.json -s >> ./status_logs/aws.json
+  curl -s https://status.aws.amazon.com/data.json | ./JSON.sh | grep "\[\"current\"\]" > ./status_logs/aws.json
+  AWS_COUNT=$(echo ./status_logs/aws.json | wc -c )
+
+if [[ $AWS_COUNT == "23" ]]; then
+  echo "AWS is Good"
+else
+  echo "AWS is Experiencing issues"
+fi
 }
+
+function status_Google() {
+  echo "Fetching Google status"
+  curl -s https://status.cloud.google.com/incidents.json | ./JSON.sh > ./status_logs/google.json
+}
+
+
+status_AWS
+status_Google
