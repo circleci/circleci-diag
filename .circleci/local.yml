@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ruby:2.5
+    steps:
+      - checkout
+      - run: ./circleci-diag.sh
